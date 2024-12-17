@@ -1,0 +1,12 @@
+Troubleshooting Common issues
+
+
+
+You may receive an alert that states unable to write to folder-monitor.log no write permissions,
+or discover this error in /nohup.log
+
+If you receive this error
+		Permission Denied for `/var/log/folder-monitor.log`**
+or discover this in /nohup.log 
+	than to correct the issue
+		sudo chown $USER /var/log/folder-monitor.log 
